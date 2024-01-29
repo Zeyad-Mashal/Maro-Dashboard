@@ -1,0 +1,275 @@
+.container {
+  width: 100%;
+  overflow: hidden !important;
+}
+.product-header-top {
+  padding-top: 1rem;
+}
+.product-header-top > div {
+  width: 100%;
+  background-color: rgb(10, 151, 3);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.product-header-top svg {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  margin-left: 10px;
+  color: rgb(10, 151, 3);
+}
+.product-header-bottom {
+  padding-top: 1rem;
+}
+.search-box {
+  width: 80%;
+}
+.search-box input {
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #999;
+}
+
+.select-box select {
+  padding: 0.3rem 1rem;
+  outline: none;
+  border: 1px solid #999;
+  border-radius: 10px;
+}
+.add-product-popup-box label > div,
+.update-product-popup-box label > div {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem 2.5rem;
+  border: 1px solid rgb(134, 134, 134);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.update-product-popup-box label > div {
+  border: none;
+}
+.update-product-popup-box label > div p {
+  padding: 8px 10px;
+  background-color: green;
+  border-radius: 10px;
+  border: none;
+  color: #fff !important;
+}
+
+.add-product-popup-box label div svg,
+.update-product-popup-box label div svg {
+  font-size: 6rem;
+  color: rgb(10, 151, 3);
+}
+
+.add-product-popup-box label div p,
+.update-product-popup-box label div p {
+  color: rgb(58, 58, 58);
+}
+
+.add-product-popup-box label input,
+.update-product-popup-box label input {
+  display: none;
+}
+.ar-inputs input,
+.ar-inputs select,
+textarea,
+.en-inputs input,
+.en-inputs select,
+textarea,
+.price-box input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  outline: none;
+}
+.ar-inputs,
+.en-inputs {
+  padding: 1rem;
+  width: 50%;
+}
+.price-box input {
+  margin: 10px;
+  width: 50%;
+}
+.sectionType-box > select,
+.precintage-box input {
+  width: 97%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #999;
+  outline: none;
+}
+.cancel-btn {
+  padding: 8px 30px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  background-color: rgb(210, 0, 0);
+  color: #fff;
+}
+.add-btn {
+  padding: 8px 30px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  background-color: rgb(10, 151, 3);
+  color: #fff;
+  margin-right: 10px;
+}
+.add-product-popup,
+.delete-product-popup,
+.update-product-popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+.add-product-popup-box,
+.delete-product-popup-box,
+.update-product-popup-box {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  position: relative;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+}
+.productImageBox {
+  width: 25%;
+}
+.productImageBox img {
+  width: 100%;
+  margin: 10px;
+  border-radius: 10px;
+}
+.errorMsg {
+  background-color: rgb(230, 18, 18);
+  color: #fff;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0;
+}
+.loader {
+  width: 25px;
+  height: 25px;
+  border: 3px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loaderDiv {
+  padding-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loaderSelect {
+  border: 5px solid rgb(10, 151, 3);
+  width: 48px;
+  height: 48px;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.errorDiv {
+  font-size: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+}
+.productBox {
+  margin: 1rem;
+  background-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  border-radius: 10px;
+}
+.productBox > p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.productBox .firstP {
+  color: #222;
+  padding: 10px 10px 0 10px;
+  margin-bottom: 0;
+}
+.productBox .secondP {
+  color: #555;
+  margin-bottom: 0;
+  padding: 10px 10px 0 10px;
+}
+.productBox img {
+  width: 300px;
+}
+.deleteBtn {
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.yesDelete,
+.noDelete {
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.yesDelete {
+  background-color: rgb(10, 151, 3);
+  color: #fff;
+  padding: 8px 10px;
+}
+.noDelete {
+  background-color: red;
+  color: #fff;
+  padding: 8px 20px;
+}
+.updateBtn {
+  padding: 8px 12px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-right: 1rem;
+}
+.updateImage {
+  width: 200px;
+  margin-left: 30px;
+}
+.paginate {
+  color: red !important;
+}

@@ -1,0 +1,43 @@
+nav{
+    background-color: #fff;
+    position: fixed;
+    width: 220px;
+    height: 100%;
+}
+
+nav div {
+    text-align: center;
+   margin-top: 1.5rem;
+}
+nav div img {
+    width: 140px;
+    text-align: center;
+}
+
+nav ul {
+    margin-top: 1.5rem;
+}
+
+nav ul li{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.2rem 0;
+    border-bottom: #d4d4d4 1px solid;
+    color: #4e4e4e;
+    cursor: pointer;
+}
+
+nav ul a:first-child li {
+    border-top: #d4d4d4 1px solid;
+}
+
+.active{
+    background-color: rgb(10, 151, 3);
+    color: #fff !important;
+    font-weight: 600;
+}
+
+nav img{
+    width: 100px;
+}
