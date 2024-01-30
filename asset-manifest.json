@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Maro-Dashboard/static/css/main.604e47e6.css",
-    "main.js": "/Maro-Dashboard/static/js/main.9271e9f8.js",
+    "main.css": "/Maro-Dashboard/static/css/main.41018347.css",
+    "main.js": "/Maro-Dashboard/static/js/main.8aa6421a.js",
     "static/media/logo.png": "/Maro-Dashboard/static/media/logo.79a5f787b1de9166fb2d.png",
     "index.html": "/Maro-Dashboard/index.html",
-    "main.604e47e6.css.map": "/Maro-Dashboard/static/css/main.604e47e6.css.map",
-    "main.9271e9f8.js.map": "/Maro-Dashboard/static/js/main.9271e9f8.js.map"
+    "main.41018347.css.map": "/Maro-Dashboard/static/css/main.41018347.css.map",
+    "main.8aa6421a.js.map": "/Maro-Dashboard/static/js/main.8aa6421a.js.map"
   },
   "entrypoints": [
-    "static/css/main.604e47e6.css",
-    "static/js/main.9271e9f8.js"
+    "static/css/main.41018347.css",
+    "static/js/main.8aa6421a.js"
   ]
 }
