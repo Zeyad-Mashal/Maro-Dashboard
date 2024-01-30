@@ -24,7 +24,7 @@ const Product = () => {
     const [serverloading, setServerloading] = useState(true);
 
     const getProducts = async () => {
-        await getAllProduct(setAllProduct, setServerErrors, setServerloading, 1)
+        await getAllProduct(setAllProduct, setServerErrors, setServerloading, pageNumber, setTotalPage)
     }
 
     const openPopup = () => {
@@ -68,6 +68,8 @@ const Product = () => {
     const [error, setError] = useState('');
     const [loading, setloading] = useState(false);
     const [productID, setProductID] = useState('');
+    const [pageNumber, setPageNumber] = useState(1);
+    const [totalPage, setTotalPage] = useState(0);
 
 
     const selectImage = (e) => {
@@ -185,6 +187,12 @@ const Product = () => {
 
     if (serverloading) return (<div className='loaderDiv container '><span className="loaderSelect"></span></div>)
     if (serverErrors) return (<div className='errorDiv container '><p>{serverErrors}</p></div>)
+
+    function handlePageClick({ selected: selectedPage }) {
+        setPageNumber(selectedPage + 1)
+        getAllProduct(setAllProduct, setServerErrors, setServerloading, selectedPage + 1, setTotalPage)
+        console.log("test")
+    }
 
 
     return (
@@ -406,6 +414,27 @@ const Product = () => {
                     <button className='cancel-btn' onClick={closeUpdatePopup}>إلغاء</button>
                     <button className='add-btn' onClick={updateProductFunc}>{(loading) ? <span className="loader"></span> : "تعديل"}</button>
                 </div>
+            </div>
+            <div className='paginate d-flex justify-content-center align-items-center '>
+                <div className='d-flex'>
+                    <ReactPaginate
+                        className='d-flex gap-5 font-1 paginate'
+                        breakLabel="..."
+                        nextLabel="next ->"
+                        onPageChange={handlePageClick}
+                        pageRangeDisplayed={5}
+                        pageCount={totalPage}
+                        previousLabel="<- prev"
+                        renderOnZeroPageCount={null}
+                        containerClassName={'paginate-container'}
+                        pageClassName={"page-link"}
+                        activeClassName={'active-paginate'}
+                        previousClassName={'previous'}
+                        nextClassName={'next'}
+                        breakClassName={'break-label'}
+                    />
+                </div>
+
             </div>
         </div>
     )

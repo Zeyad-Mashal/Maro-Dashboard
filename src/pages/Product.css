@@ -270,6 +270,40 @@ textarea,
   width: 200px;
   margin-left: 30px;
 }
+.paginate-container {
+  display: flex;
+  list-style-type: none;
+}
+.page-link,
+.previous,
+.next,
+.reak-label {
+  padding: 0.5rem 0.7rem;
+  background-color: #fff;
+  border: 1px solid rgb(184, 184, 185);
+  cursor: pointer;
+}
+.page-link {
+  padding: 0.5rem 0.9rem;
+}
+.active-paginate {
+  background-color: rgb(10, 151, 3);
+  color: #fff;
+  border-color: rgb(10, 151, 3);
+}
+.previous {
+  margin-left: 1rem;
+  border-top-right-radius: 10px;
+}
+.next {
+  margin-right: 1rem;
+  border-bottom-left-radius: 10px;
+}
 .paginate {
-  color: red !important;
+  margin-top: 1.2rem;
+  position: relative;
+}
+.previous,
+.next {
+  color: #fff !important;
 }
