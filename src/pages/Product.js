@@ -407,27 +407,6 @@ const Product = () => {
                     <button className='add-btn' onClick={updateProductFunc}>{(loading) ? <span className="loader"></span> : "تعديل"}</button>
                 </div>
             </div>
-            <div className='paginate d-flex justify-content-center align-items-center '>
-                <div className='d-flex'>
-                    <ReactPaginate
-                        className='d-flex gap-5 font-1 paginate'
-                        breakLabel="..."
-                        previousLabel="<- prev"
-                        nextLabel="next ->"
-                        // pageCount={totalPage}
-                        pageRangeDisplayed={5}
-                        // onPageChange={handlePageClick}
-                        renderOnZeroPageCount={null}
-                        containerClassName={'paginate-container'}
-                        pageClassName={"page-link"}
-                        activeClassName={'active-paginate'}
-                        previousClassName={'previous'}
-                        nextClassName={'next'}
-                        breakClassName={'break-label'}
-                    />
-                </div>
-
-            </div>
         </div>
     )
 }
